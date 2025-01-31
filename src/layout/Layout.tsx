@@ -1,9 +1,10 @@
 import { Outlet } from 'react-router-dom';
+import TitleBar from '../components/TitleBar';
 
 const Layout = () => {
   return (
     <>
-      <div className='bg-red-200'>레이아웃</div>
+      <TitleBar />
       <Outlet />
     </>
   );

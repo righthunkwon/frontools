@@ -1,20 +1,8 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, ipcMain } from 'electron';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-// import { createRequire } from 'node:module';
-// const require = createRequire(import.meta.url);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-// 빌드 폴더구조
-//
-// ├─┬─┬ dist
-// │ │ └── index.html
-// │ │
-// │ ├─┬ dist-electron
-// │ │ ├── main.js
-// │ │ └── preload.mjs
-// │
 process.env.APP_ROOT = path.join(__dirname, '..');
 
 export const VITE_DEV_SERVER_URL = process.env['VITE_DEV_SERVER_URL'];
@@ -25,12 +13,14 @@ process.env.VITE_PUBLIC = VITE_DEV_SERVER_URL ? path.join(process.env.APP_ROOT, 
 
 let win: BrowserWindow | null;
 
-function createWindow() {
+const createWindow = () => {
   win = new BrowserWindow({
-    width: 1450,
-    height: 800,
-    minWidth: 1000,
-    minHeight: 600,
+    // 16:10 > 1024*640, 1280*800, 1600*1000, 1920*1200, 2560*1600, 3840*2400
+    width: 1024,
+    height: 640,
+    minWidth: 1024,
+    minHeight: 640,
+    frame: false, // 제목표시줄
     icon: path.join(process.env.VITE_PUBLIC, 'electron-vite.svg'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.mjs'),
@@ -46,7 +36,19 @@ function createWindow() {
   } else {
     win.loadFile(path.join(RENDERER_DIST, 'index.html'));
   }
-}
+
+  ipcMain.on('window-close', () => win!.close());
+  ipcMain.on('window-minimize', () => win!.minimize());
+  ipcMain.on('window-maximize', () => {
+    if (win!.isMaximized()) {
+      win!.restore();
+      win!.webContents.send('window-is-restored');
+    } else {
+      win!.maximize();
+      win!.webContents.send('window-is-maximized');
+    }
+  });
+};
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
