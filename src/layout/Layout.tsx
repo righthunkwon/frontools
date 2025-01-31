@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 const Layout = () => {
   return (
     <>
-      <div>레이아웃</div>
+      <div className='bg-red-200'>레이아웃</div>
       <Outlet />
     </>
   );
