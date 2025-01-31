@@ -38,7 +38,27 @@ npm create electron-vite@latest
 - 🔀 merge: 브랜치 병합
   <br /><br />
 
+## 최적화
+
+[아이콘 최적화 - svg](https://yozm.wishket.com/magazine/detail/2252/)
+[프론트엔드 성능 최적화](https://east-star.tistory.com/36)
+
+- 아이콘 적용 방법
+
+```
+1. ?react 를 붙여 import
+import Close from '../assets/close-btn.svg?react';
+
+2. svg 파일 내 width와 height를 width="current", height="current"로 지정
+
+3. 컴포넌트처럼 사용
+<Close width='20' height='40' />
+```
+
+<br /><br />
+
 ## 트러블슈팅
 
 [import React from 'react'와 이별하기](https://summermong.tistory.com/504)
 [일렉트론 배포 경로 문제 - HashRouter](https://code-nen.tistory.com/125)
+<br /><br />
