@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './layout/Layout.tsx';
 import Home from './components/Home.tsx';
