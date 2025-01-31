@@ -52,13 +52,11 @@ npm create electron-vite@latest
 
 3. tsconfig.json의 compilerOptions: {..., "types": ["vite-plugin-svgr/client"] ,...} 정의
 
-4. svg 파일 내 width와 height를 width="current", height="current"로 지정
-
-5. ?react 를 붙여 svg 파일 import
+4. ?react 를 붙여 svg 파일 import
 import Close from '../assets/close-btn.svg?react';
 
-6. svg 파일을 컴포넌트처럼 사용
-<Close width='20' height='40' />
+5. svg 파일을 컴포넌트처럼 사용
+<Close width={20} height={40} />
 ```
 
 <br /><br />
