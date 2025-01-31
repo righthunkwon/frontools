@@ -41,3 +41,4 @@ npm create electron-vite@latest
 ## 트러블슈팅
 
 [import React from 'react'와 이별하기](https://summermong.tistory.com/504)
+[일렉트론 배포 경로 문제 - HashRouter](https://code-nen.tistory.com/125)
