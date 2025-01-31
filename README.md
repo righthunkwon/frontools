@@ -46,12 +46,18 @@ npm create electron-vite@latest
 - 아이콘 적용 방법
 
 ```
-1. ?react 를 붙여 import
+1. vite-plugin-svgr 설치
+
+2. vite.config.ts에 plugins: [..., svgr(), ...] 정의
+
+3. tsconfig.json의 compilerOptions: {..., "types": ["vite-plugin-svgr/client"] ,...} 정의
+
+4. svg 파일 내 width와 height를 width="current", height="current"로 지정
+
+5. ?react 를 붙여 svg 파일 import
 import Close from '../assets/close-btn.svg?react';
 
-2. svg 파일 내 width와 height를 width="current", height="current"로 지정
-
-3. 컴포넌트처럼 사용
+6. svg 파일을 컴포넌트처럼 사용
 <Close width='20' height='40' />
 ```
 
