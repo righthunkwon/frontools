@@ -18,7 +18,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* SVGs */
+    "types": ["vite-plugin-svgr/client"]
   },
   "include": ["src", "electron"],
   "references": [{ "path": "./tsconfig.node.json" }]
