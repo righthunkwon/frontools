@@ -5,6 +5,12 @@ export default {
     extend: {
       colors: {
         // 색상 정의
+        ourBgGray: '#262626',
+        ourBgGrayHover: '#2b2b2b',
+        ourBgBlack: '#212121',
+        ourBgLightGray: '#3b3b3b',
+        ourBgRed: '#eb2113',
+        ourBtnGray: '#a6a6a6',
       },
       height: {
         // 높이 정의 ,
