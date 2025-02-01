@@ -6,7 +6,6 @@ export default {
       colors: {
         // 색상 정의
         ourBgGray: '#262626',
-        ourBgGrayHover: '#2b2b2b',
         ourBgBlack: '#212121',
         ourBgLightGray: '#3b3b3b',
         ourBgRed: '#eb2113',
