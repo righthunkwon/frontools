@@ -23,19 +23,19 @@ const TitleBar = () => {
   return (
     <>
       <div className='window-title-bar'>
-        <div className='my-auto'>
+        <div className='my-auto '>
           <button className='window-menu' onClick={handleMenu}>
-            <Menu width={10} height={10} />
+            <Menu width={15} height={15} />
           </button>
         </div>
-        <div className='my-auto'>
-          <button className='window-button' onClick={handleMinimize}>
+        <div className='my-auto '>
+          <button className=' window-button' onClick={handleMinimize}>
             <Minimize width={10} height={10} />
           </button>
           <button className='window-button' onClick={handleMaximize}>
             <Maximize width={10} height={10} />
           </button>
-          <button className='window-button-red' onClick={handleClose}>
+          <button className='window-button-red ' onClick={handleClose}>
             <Close width={10} height={10} />
           </button>
         </div>

@@ -15,12 +15,12 @@ let win: BrowserWindow | null;
 
 const createWindow = () => {
   win = new BrowserWindow({
-    // 16:10 > 1024*640, 1280*800, 1600*1000, 1920*1200, 2560*1600, 3840*2400
+    // 16:10 비율 : 1024*640, 1280*800, 1600*1000, 1920*1200, 2560*1600, 3840*2400
     width: 1024,
     height: 640,
     minWidth: 1024,
     minHeight: 640,
-    frame: false, // 제목표시줄
+    frame: false,
     icon: path.join(process.env.VITE_PUBLIC, 'electron-vite.svg'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.mjs'),

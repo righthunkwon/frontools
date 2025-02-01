@@ -31,12 +31,12 @@
 
   .window-button {
     -webkit-app-region: no-drag;
-    @apply p-4 text-ourBtnGray hover:bg-ourBgLightGray hover:text-white;
+    @apply py-[18.5px] px-[18.5px] text-ourBtnGray hover:bg-ourBgLightGray hover:text-white;
   }
 
   .window-button-red {
     -webkit-app-region: no-drag;
-    @apply p-4 text-ourBtnGray hover:bg-ourBgRed hover:text-white;
+    @apply py-[18.5px] px-[18.5px] text-ourBtnGray hover:bg-ourBgRed hover:text-white;
   }
 
   .window-menu {
