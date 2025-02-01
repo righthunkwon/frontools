@@ -1,11 +1,20 @@
 import { Outlet } from 'react-router-dom';
-import TitleBar from '../components/TitleBar';
+import TopMenu from '@/components/TopMenu';
+import SideMenu from '@/components/SideMenu';
 
 const Layout = () => {
   return (
     <>
-      <TitleBar />
-      <Outlet />
+      <div className='flex flex-col h-screen'>
+        <div>
+          <TopMenu />
+        </div>
+
+        <div className='flex flex-1 '>
+          <SideMenu />
+          <Outlet />
+        </div>
+      </div>
     </>
   );
 };

@@ -5,8 +5,6 @@
 @font-face {
   font-family: 'Pretendard';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
 }
 
 @layer base {
@@ -24,24 +22,28 @@
 }
 
 @layer components {
-  .window-title-bar {
+  .top-menu {
     -webkit-app-region: drag;
     @apply flex justify-between bg-ourBgGray;
   }
 
-  .window-button {
+  .top-menu-button {
     -webkit-app-region: no-drag;
     @apply py-[18.5px] px-[18.5px] text-ourBtnGray hover:bg-ourBgLightGray hover:text-white;
   }
 
-  .window-button-red {
+  .top-menu-button-red {
     -webkit-app-region: no-drag;
     @apply py-[18.5px] px-[18.5px] text-ourBtnGray hover:bg-ourBgRed hover:text-white;
   }
 
-  .window-menu {
+  .top-menu-menu {
     -webkit-app-region: no-drag;
     @apply p-4 text-ourBtnGray hover:bg-ourBgLightGray hover:text-white;
+  }
+
+  .side-menu-button {
+    @apply flex flex-col items-center justify-center w-full py-2  hover:bg-ourBgLightGray hover:text-gray-200 hover:cursor-pointer rounded-md;
   }
 }
 
