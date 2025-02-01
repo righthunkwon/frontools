@@ -35,7 +35,7 @@ const TitleBar = () => {
           <button className='window-button' onClick={handleMaximize}>
             <Maximize width={10} height={10} />
           </button>
-          <button className='window-red-button' onClick={handleClose}>
+          <button className='window-button-red' onClick={handleClose}>
             <Close width={10} height={10} />
           </button>
         </div>

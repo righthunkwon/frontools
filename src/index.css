@@ -34,7 +34,7 @@
     @apply p-4 text-ourBtnGray hover:bg-ourBgLightGray hover:text-white;
   }
 
-  .window-red-button {
+  .window-button-red {
     -webkit-app-region: no-drag;
     @apply p-4 text-ourBtnGray hover:bg-ourBgRed hover:text-white;
   }
