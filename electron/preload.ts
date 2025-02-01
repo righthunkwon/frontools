@@ -19,7 +19,7 @@ contextBridge.exposeInMainWorld('ipcRenderer', {
   },
 });
 
-contextBridge.exposeInMainWorld('titleBar', {
+contextBridge.exposeInMainWorld('topMenu', {
   minimize: () => ipcRenderer.send('window-minimize'),
   maximize: () => ipcRenderer.send('window-maximize'),
   restore: () => ipcRenderer.send('window-restore'),
