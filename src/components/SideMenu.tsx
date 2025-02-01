@@ -1,9 +1,9 @@
-import Home from '@assets/domain-home.svg?react';
-import TypeScript from '@assets/domain-typescript.svg?react';
-import Json from '@assets/domain-brace.svg?react';
-import Data from '@assets/domain-data.svg?react';
 import { useNavigate } from 'react-router-dom';
 import { Path } from '@/constants/path';
+import HomeSvg from '@assets/domain-home.svg?react';
+import TypeScriptSvg from '@assets/domain-typescript.svg?react';
+import JsonSvg from '@assets/domain-brace.svg?react';
+import DataSvg from '@assets/domain-data.svg?react';
 
 const SideMenu = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const SideMenu = () => {
         {/* home */}
         <div className='w-full px-1 py-2'>
           <button className='side-menu-button' onClick={() => handleBtnClick(Path.HomePage)}>
-            <Home width={20} height={20} />
+            <HomeSvg width={20} height={20} />
             <span className='pt-1 text-[10px]'>home</span>
           </button>
         </div>
@@ -29,7 +29,7 @@ const SideMenu = () => {
         {/* json */}
         <div className='w-full px-1 py-2'>
           <button className='side-menu-button' onClick={() => handleBtnClick(Path.JsonPage)}>
-            <Json width={20} height={20} />
+            <JsonSvg width={20} height={20} />
             <span className='pt-1 text-[10px]'>json</span>
           </button>
         </div>
@@ -37,7 +37,7 @@ const SideMenu = () => {
         {/* data */}
         <div className='w-full px-1 py-2'>
           <button className='side-menu-button' onClick={() => handleBtnClick(Path.DataPage)}>
-            <Data width={20} height={20} />
+            <DataSvg width={20} height={20} />
             <span className='pt-1 text-[10px]'>data</span>
           </button>
         </div>
@@ -45,7 +45,7 @@ const SideMenu = () => {
         {/* typescript */}
         <div className='w-full px-1 py-2'>
           <button className='side-menu-button' onClick={() => handleBtnClick(Path.TypeScriptPage)}>
-            <TypeScript width={20} height={20} />
+            <TypeScriptSvg width={20} height={20} />
             <span className='pt-1 text-[10px]'>typescript</span>
           </button>
         </div>
