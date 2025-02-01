@@ -1,9 +1,9 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import Layout from './layout/Layout.tsx';
-import Home from './components/Home.tsx';
-import DataPage from './domains/data-tool/DataPage.tsx';
-import JsonPage from './domains/json-tool/JsonPage.tsx';
-import TypescriptPage from './domains/typescript-tool/TypescriptPage.tsx';
+import Layout from '@layout/Layout.tsx';
+import Home from '@components/Home.tsx';
+import DataPage from '@domains/data-tool/DataPage.tsx';
+import JsonPage from '@domains/json-tool/JsonPage.tsx';
+import TypescriptPage from '@domains/typescript-tool/TypescriptPage.tsx';
 
 const App = () => {
   return (
