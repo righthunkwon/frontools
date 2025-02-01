@@ -2,9 +2,15 @@ import Home from '@assets/domain-home.svg?react';
 import TypeScript from '@assets/domain-typescript.svg?react';
 import Json from '@assets/domain-brace.svg?react';
 import Data from '@assets/domain-data.svg?react';
+import { useNavigate } from 'react-router-dom';
+import { Path } from '@/constants/path';
 
 const SideMenu = () => {
-  const handleSideMenuBtnClick = () => {};
+  const navigate = useNavigate();
+
+  const handleBtnClick = (path: string) => {
+    navigate(path);
+  };
 
   return (
     <>
@@ -14,34 +20,34 @@ const SideMenu = () => {
 
         {/* home */}
         <div className='w-full px-1 py-2'>
-          <div className='side-menu-button'>
+          <button className='side-menu-button' onClick={() => handleBtnClick(Path.HomePage)}>
             <Home width={20} height={20} />
             <span className='pt-1 text-[10px]'>home</span>
-          </div>
+          </button>
         </div>
 
         {/* json */}
         <div className='w-full px-1 py-2'>
-          <div className='side-menu-button'>
+          <button className='side-menu-button' onClick={() => handleBtnClick(Path.JsonPage)}>
             <Json width={20} height={20} />
             <span className='pt-1 text-[10px]'>json</span>
-          </div>
+          </button>
         </div>
 
         {/* data */}
         <div className='w-full px-1 py-2'>
-          <div className='side-menu-button'>
+          <button className='side-menu-button' onClick={() => handleBtnClick(Path.DataPage)}>
             <Data width={20} height={20} />
             <span className='pt-1 text-[10px]'>data</span>
-          </div>
+          </button>
         </div>
 
         {/* typescript */}
         <div className='w-full px-1 py-2'>
-          <div className='side-menu-button'>
+          <button className='side-menu-button' onClick={() => handleBtnClick(Path.TypeScriptPage)}>
             <TypeScript width={20} height={20} />
             <span className='pt-1 text-[10px]'>typescript</span>
-          </div>
+          </button>
         </div>
       </div>
     </>
