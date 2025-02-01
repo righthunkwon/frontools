@@ -1,5 +1,5 @@
 interface Window {
-  titleBar: {
+  topMenu: {
     minimize: () => void;
     maximize: () => void;
     restore: () => void;
