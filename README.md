@@ -38,6 +38,11 @@ npm create electron-vite@latest
 - 🔀 merge: 브랜치 병합
   <br /><br />
 
+## 개발
+
+[vite 환경에서 절대경로 설정하기](https://velog.io/@hunmok1027/vite-%EC%97%90%EC%84%9C-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
+<br /><br />
+
 ## 최적화
 
 [아이콘 최적화 - svg](https://yozm.wishket.com/magazine/detail/2252/)
