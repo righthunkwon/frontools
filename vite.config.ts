@@ -18,4 +18,16 @@ export default defineConfig({
       renderer: process.env.NODE_ENV === 'test' ? undefined : {},
     }),
   ],
+  resolve: {
+    alias: [
+      { find: '@', replacement: '/src' },
+      { find: '@assets', replacement: '/src/assets' },
+      { find: '@components', replacement: '/src/components' },
+      { find: '@constants', replacement: '/src/constants' },
+      { find: '@domains', replacement: '/src/domains' },
+      { find: '@layout', replacement: '/src/layout' },
+      { find: '@store', replacement: '/src/store' },
+      { find: '@types', replacement: '/src/types' },
+    ],
+  },
 });
