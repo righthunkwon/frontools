@@ -4,18 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        // 색상 정의
+        // Bg: background
         ourBgGray: '#262626',
         ourBgBlack: '#212121',
         ourBgLightGray: '#3b3b3b',
         ourBgRed: '#eb2113',
-        ourBtnGray: '#a6a6a6',
+        // Ln: line (text, icon, etc)
+        ourLnGray: '#a6a6a6',
+        ourLnLightGray: '#373737',
+        ourLnWhite: '#d5d5d5',
       },
       height: {
-        // 높이 정의 ,
+        //
       },
       width: {
-        // 너비 정의
+        //
       },
     },
     fontFamily: {
