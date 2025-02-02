@@ -18,9 +18,9 @@ const SideMenu = () => {
 
   return (
     <>
-      <aside className='flex flex-col items-center w-20 text-ourLnGray bg-ourBgGray border-ourLnLightGray border-r-[1px]'>
+      <aside>
         {/* 공백 */}
-        <div className='h-10'></div>
+        <div className='w-20 h-10'></div>
 
         {/* home */}
         <div className='w-full px-1 py-2 '>

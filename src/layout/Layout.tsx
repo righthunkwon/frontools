@@ -13,8 +13,12 @@ const Layout = () => {
 
         {/* 사이드메뉴 & 메인페이지 */}
         <div className='flex flex-1 '>
-          <SideMenu />
-          <Outlet />
+          <div className='h-full flex flex-col items-center w-20 text-ourLnGray bg-ourBgGray border-ourLnLightGray border-r-[1px]'>
+            <SideMenu />
+          </div>
+          <div className='flex flex-col flex-1 overflow-y-auto text-white bg-ourBgBlack'>
+            <Outlet />
+          </div>
         </div>
       </div>
     </>
