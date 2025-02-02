@@ -9,6 +9,8 @@ export default {
         ourBgBlack: '#212121',
         ourBgLightGray: '#3b3b3b',
         ourBgRed: '#eb2113',
+        ourBgOrange: '#ff6c37',
+        ourBgDarkOrange: '#e05320',
         // Ln: line (text, icon, etc)
         ourLnGray: '#a6a6a6',
         ourLnLightGray: '#373737',
