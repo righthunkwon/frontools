@@ -13,37 +13,57 @@
     @apply font-[Pretendard];
     margin: 0;
     padding: 0;
+    overflow: hidden;
   }
 
   button {
     border: 0;
     background-color: transparent;
   }
+
+  .home-page-scroll {
+    overflow-y: auto;
+  }
+
+  .home-page-scroll::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .home-page-scroll::-webkit-scrollbar-thumb {
+    height: 30%;
+    background-color: #b4b4b456;
+    border-radius: 20px;
+  }
+
+  .home-page-scroll::-webkit-scrollbar-track {
+    background-color: #b4b4b438;
+  }
 }
 
 @layer components {
   .top-menu {
     -webkit-app-region: drag;
-    @apply flex justify-between bg-ourBgGray;
+    @apply flex justify-between bg-ourBgGray  border-ourLnLightGray border-b-[1px];
   }
 
   .top-menu-button {
     -webkit-app-region: no-drag;
-    @apply py-[18.5px] px-[18.5px] text-ourBtnGray hover:bg-ourBgLightGray hover:text-white;
+    @apply py-[18.5px] px-[18.5px] text-ourLnGray hover:bg-ourBgLightGray hover:text-white;
   }
 
   .top-menu-button-red {
     -webkit-app-region: no-drag;
-    @apply py-[18.5px] px-[18.5px] text-ourBtnGray hover:bg-ourBgRed hover:text-white;
+    @apply py-[18.5px] px-[18.5px] text-ourLnGray hover:bg-ourBgRed hover:text-white;
   }
 
   .top-menu-menu {
     -webkit-app-region: no-drag;
-    @apply p-4 text-ourBtnGray hover:bg-ourBgLightGray hover:text-white;
+    @apply p-4 text-ourLnGray hover:bg-ourBgLightGray hover:text-white;
   }
 
   .side-menu-button {
-    @apply flex flex-col items-center justify-center w-full py-2  hover:bg-ourBgLightGray hover:text-gray-200 hover:cursor-pointer rounded-md;
+    @apply select-none flex flex-col items-center justify-center w-full py-2  hover:bg-ourBgLightGray hover:text-ourLnWhite hover:cursor-pointer rounded-md;
   }
 }
 
