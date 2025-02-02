@@ -43,6 +43,8 @@ npm create electron-vite@latest
 [vite 환경에서 절대경로 설정하기](https://velog.io/@hunmok1027/vite-%EC%97%90%EC%84%9C-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 
 [시멘틱 태그](https://seo.tbwakorea.com/blog/what-is-semantic-tag/)
+
+요소들의 배치를 나타내는 tailwind css 태그들의 경우 (ex. flex, p, m 등) 각 컴포넌트의 최상단이 아니라, 페이지나 레이아웃과 같은 곳에 하여 요소의 배치를 수정할 때 컴포넌트에 해당하는 css 속성까지 수정하는 일을 최소화하자.
 <br /><br />
 
 ## 최적화
