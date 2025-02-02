@@ -11,7 +11,6 @@ const SideMenu = () => {
   const navigate = useNavigate();
 
   const handleBtnClick = (path: string) => {
-    console.log('클릭되니');
     navigate(path);
     setMenu(path);
   };
