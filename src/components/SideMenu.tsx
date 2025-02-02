@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Path } from '@/constants/path';
 import HomeSvg from '@assets/domain-home.svg?react';
@@ -6,21 +7,27 @@ import JsonSvg from '@assets/domain-brace.svg?react';
 import DataSvg from '@assets/domain-data.svg?react';
 
 const SideMenu = () => {
+  const [menu, setMenu] = useState('/');
   const navigate = useNavigate();
 
   const handleBtnClick = (path: string) => {
+    console.log('클릭되니');
     navigate(path);
+    setMenu(path);
   };
 
   return (
     <>
-      <div className='flex flex-col items-center w-20 text-ourBtnGray bg-ourBgGray'>
+      <aside className='flex flex-col items-center w-20 text-ourLnGray bg-ourBgGray border-ourLnLightGray border-r-[1px]'>
         {/* 공백 */}
-        <div className='h-4'></div>
+        <div className='h-10'></div>
 
         {/* home */}
-        <div className='w-full px-1 py-2'>
-          <button className='side-menu-button' onClick={() => handleBtnClick(Path.HomePage)}>
+        <div className='w-full px-1 py-2 '>
+          <button
+            className={`side-menu-button ${menu === Path.HomePage ? 'bg-ourBgLightGray text-ourLnWhite pointer-events-none' : ''} `}
+            onClick={() => handleBtnClick(Path.HomePage)}
+          >
             <HomeSvg width={20} height={20} />
             <span className='pt-1 text-[10px]'>home</span>
           </button>
@@ -28,7 +35,10 @@ const SideMenu = () => {
 
         {/* json */}
         <div className='w-full px-1 py-2'>
-          <button className='side-menu-button' onClick={() => handleBtnClick(Path.JsonPage)}>
+          <button
+            className={`side-menu-button ${menu === Path.JsonPage ? 'bg-ourBgLightGray text-ourLnWhite pointer-events-none' : ''} `}
+            onClick={() => handleBtnClick(Path.JsonPage)}
+          >
             <JsonSvg width={20} height={20} />
             <span className='pt-1 text-[10px]'>json</span>
           </button>
@@ -36,7 +46,10 @@ const SideMenu = () => {
 
         {/* data */}
         <div className='w-full px-1 py-2'>
-          <button className='side-menu-button' onClick={() => handleBtnClick(Path.DataPage)}>
+          <button
+            className={`side-menu-button ${menu === Path.DataPage ? 'bg-ourBgLightGray text-ourLnWhite pointer-events-none' : ''} `}
+            onClick={() => handleBtnClick(Path.DataPage)}
+          >
             <DataSvg width={20} height={20} />
             <span className='pt-1 text-[10px]'>data</span>
           </button>
@@ -44,12 +57,15 @@ const SideMenu = () => {
 
         {/* typescript */}
         <div className='w-full px-1 py-2'>
-          <button className='side-menu-button' onClick={() => handleBtnClick(Path.TypeScriptPage)}>
+          <button
+            className={`side-menu-button ${menu === Path.TypeScriptPage ? 'bg-ourBgLightGray text-ourLnWhite pointer-events-none' : ''} `}
+            onClick={() => handleBtnClick(Path.TypeScriptPage)}
+          >
             <TypeScriptSvg width={20} height={20} />
             <span className='pt-1 text-[10px]'>typescript</span>
           </button>
         </div>
-      </div>
+      </aside>
     </>
   );
 };
