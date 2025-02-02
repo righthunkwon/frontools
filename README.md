@@ -44,6 +44,8 @@ npm create electron-vite@latest
 
 [시멘틱 태그](https://seo.tbwakorea.com/blog/what-is-semantic-tag/)
 
+[타입스크립트에서 useRef를 사용할 때 DOM 타입 지정 방법](https://zindex.tistory.com/241)
+
 요소들의 배치를 나타내는 tailwind css 태그들의 경우 (ex. flex, p, m 등) 각 컴포넌트의 최상단이 아니라, 레이아웃이나 적어도 페이지 같은 요소들의 구조가 보이는 곳에 작성 하여 요소의 배치를 수정할 때 컴포넌트에 해당하는 css 속성까지 파고들어가서 하나하나 수정하는 일을 최소화하자.
 <br /><br />
 
