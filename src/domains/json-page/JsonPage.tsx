@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect, RefObject } from 'react';
 import Navigation from './components/Navigation';
 
 const example = [
@@ -120,6 +120,7 @@ const example = [
 ];
 
 const JsonPage = () => {
+  const inputRef = useRef<HTMLTextAreaElement>(null);
   const [inputValue, setInputValue] = useState('');
   const [outputValue, setOutputValue] = useState('');
 
@@ -130,6 +131,10 @@ const JsonPage = () => {
   const handleOutputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setOutputValue(e.target.value);
   };
+
+  useEffect(() => {
+    inputRef?.current?.focus();
+  }, []);
 
   return (
     <>
@@ -151,7 +156,8 @@ const JsonPage = () => {
                 </div>
               </div>
               <textarea
-                className='w-full p-2 resize-none bg-ourBgLightGray h-96 c-scroll-sm c-scroll focus:outline-[1px] focus:outline-ourLnGray'
+                ref={inputRef}
+                className='w-full p-2 resize-none bg-ourBgLightGray h-96 c-scroll-sm c-scroll focus:outline-ourLnGray'
                 value={inputValue}
                 onChange={handleInputChange}
               />
@@ -168,7 +174,7 @@ const JsonPage = () => {
                 </div>
               </div>
               <textarea
-                className='w-full p-2 resize-none bg-ourBgLightGray h-96 c-scroll-sm c-scroll'
+                className='w-full p-2 resize-none bg-ourBgLightGray h-96 c-scroll-sm c-scroll focus:outline-ourLnGray'
                 value={outputValue}
                 onChange={handleOutputChange}
               />
