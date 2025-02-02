@@ -9,8 +9,8 @@ const HomePage = () => {
         <nav>
           <Navigation />
         </nav>
-        <main className='flex h-[calc(100vh-96px)] pt-16 home-page-scroll'>
-          <div className='w-32'></div>
+        <main className='flex h-[calc(100vh-92px)] pt-12 c-scroll'>
+          <div className='w-20'></div>
           <article className='flex-1 max-w-[640px] text-sm'>
             <Introduction />
           </article>
