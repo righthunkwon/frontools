@@ -5,7 +5,7 @@ import SideMenu from '@/components/SideMenu';
 const Layout = () => {
   return (
     <>
-      <div className='flex flex-col h-screen'>
+      <div className='flex flex-col h-screen '>
         {/* 상단메뉴 */}
         <div>
           <TopMenu />
