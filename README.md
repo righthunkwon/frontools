@@ -46,6 +46,8 @@ npm create electron-vite@latest
 
 [타입스크립트에서 useRef를 사용할 때 DOM 타입 지정 방법](https://zindex.tistory.com/241)
 
+[프론트엔드 개발 가이드(컨벤션)](https://monamigoon.tistory.com/entry/Project-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%ED%98%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%9E%91%EC%84%B1)
+
 요소들의 배치를 나타내는 tailwind css 태그들의 경우 (ex. flex, p, m 등) 각 컴포넌트의 최상단이 아니라, 레이아웃이나 적어도 페이지 같은 요소들의 구조가 보이는 곳에 작성 하여 요소의 배치를 수정할 때 컴포넌트에 해당하는 css 속성까지 파고들어가서 하나하나 수정하는 일을 최소화하자.
 <br /><br />
 
@@ -53,6 +55,7 @@ npm create electron-vite@latest
 
 [아이콘 최적화 - svg](https://yozm.wishket.com/magazine/detail/2252/)
 [프론트엔드 성능 최적화](https://east-star.tistory.com/36)
+[Zustand 사용 시 상태변경에 따른 리렌더링 최소화 - 컴포넌트에 스토어 훅 호출하지 않기](https://www.heropy.dev/p/n74Tgc)
 
 - 아이콘 적용 방법
 
