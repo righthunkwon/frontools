@@ -11,7 +11,7 @@
 
 ## 프로젝트 개발 시 참고한 글
 
-- 폴더구조     📂 [Toss frontedn-fundamentals - 함께 수정되는 파일은 같은 디렉토리에 두기](https://frontend-fundamentals.com/code/examples/code-directory.html)
+- 폴더구조     📂 [Toss frontend-fundamentals - 함께 수정되는 파일은 같은 디렉토리에 두기](https://frontend-fundamentals.com/code/examples/code-directory.html)
 - 컨벤션       📌 [vite 환경에서 절대경로 설정하기](https://velog.io/@hunmok1027/vite-%EC%97%90%EC%84%9C-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 - 컨벤션       📌 [시멘틱 태그 사용하기](https://seo.tbwakorea.com/blog/what-is-semantic-tag/)
 - 개발         💻 [Eslist, Prettier, Extensions](https://monamigoon.tistory.com/entry/Project-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%ED%98%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%9E%91%EC%84%B1)
